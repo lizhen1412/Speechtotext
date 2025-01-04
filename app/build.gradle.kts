@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.aegis.learn"
-        minSdk = 35
+        minSdk = 31
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -33,6 +33,8 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    ndkVersion = "28.0.12674087 rc2"
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
@@ -40,6 +42,8 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
