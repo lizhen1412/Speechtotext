@@ -8,6 +8,7 @@ pluginManagement {
             }
         }
         mavenCentral()
+        maven { url = uri("https://maven.aliyun.com/repository/public") }  // 添加阿里巴巴的 Maven 源
         gradlePluginPortal()
     }
 }
@@ -16,6 +17,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") }
     }
 }
 

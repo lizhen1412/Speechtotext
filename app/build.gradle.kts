@@ -47,5 +47,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("org.vosk:vosk-android:0.3.47")
+//    implementation("org.vosk:vosk-android:0.3.47")
+    implementation("com.alphacephei:vosk:0.3.45")  // 使用新的 Vosk 依赖项
 }
